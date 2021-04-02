@@ -1,5 +1,5 @@
 {
-    "name": "VCPlayBot",
+    "name": "✯𝗩𝗖𝗣𝗹𝗮𝘆𝗕𝗼𝘁✯",
     "logo": "https://telegra.ph/file/7ffa8d18b9b7f1b51a81e.jpg",
     "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
     "keywords": ["music", "voicechat", "telegram"],
@@ -24,7 +24,6 @@
         },
         "SUDO_USERS": {
             "description": "Full-access users, counted as admin everywhere, seperated by space.",
-            "value": "797768146"
             "required": true
         },
         "DURATION_LIMIT": {
