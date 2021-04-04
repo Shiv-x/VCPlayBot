@@ -4,7 +4,7 @@
     "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
     "keywords": ["music", "voicechat", "telegram"],
     "repository": "https://github.com/QueenArzoo/VCPlayBot",
-    
+    "stack": "container",
     "env": {
         "SESSION_NAME": {
             "description": "Session string (pyrogram)",
@@ -31,5 +31,10 @@
             "required": true,
             "value": "15"
         }
-    }
+    },
+    "buildpacks": [
+       {
+      "url": "heroku/python"
+       }
+     ]
   }
