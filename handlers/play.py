@@ -129,7 +129,7 @@ async def deezer(client: Client, message_: Message):
     m = await client.send_photo(
         chat_id=message_.chat.id,
         photo="final.png",
-        caption=f"Playing [{title}]({url}) Via [Deezer](https://t.me/AuraXSupport)."
+        caption=f"Playing [{title}]({url}) Via [Deezer](https://t.me/LaylaSupport)."
     ) 
     os.remove("final.png")
 # -----------------------------------------------------Jiosaavn-----------------------------------------------------------------
@@ -174,7 +174,7 @@ async def jiosaavn(client: Client, message_: Message):
     await res.delete()
     m = await client.send_photo(
         chat_id=message_.chat.id,
-        caption=f"Playing {sname} Via [Jiosaavn](https://t.me/AuraXSupport)",
+        caption=f"Playing {sname} Via [Jiosaavn](https://t.me/LaylaSupport)",
         photo="final.png",
     )
     os.remove("final.png")
@@ -226,7 +226,7 @@ async def ytp(client: Client, message_: Message):
     res.delete
     m = await client.send_photo(
         chat_id=message_.chat.id,
-        caption=f"Playing `{query}` Via [YouTube](https://t.me/AuraXSupport)",
+        caption=f"Playing `{query}` Via [YouTube](https://t.me/LaylaSupport)",
         photo="final.png",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("Watch on youtube", url=link)]]
