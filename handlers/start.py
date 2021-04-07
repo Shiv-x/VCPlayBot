@@ -11,10 +11,10 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-I am 𝗩𝗖𝗣𝗹𝗮𝘆𝗕𝗼𝘁 VC Music Player, an open-source bot that lets you play music in your Telegram groups.
+\nI a'm 𝗩𝗖𝗣𝗹𝗮𝘆𝗕𝗼𝘁 VC Music Player, an open-source bot that lets you play music in your Telegram groups.
 Maintained by @HEROGAMERS1 ❤
-For source code Join our support group @LaylaSupport.
-Use the buttons below to know more about me.
+\nTo add in your group contact us at @LaylaSupport.
+\nUse the buttons below to know more about me.
  </b>""",
       
        
