@@ -12,7 +12,7 @@ async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\nI a'm 𝗩𝗖𝗣𝗹𝗮𝘆𝗕𝗼𝘁 VC Music Player, an open-source bot that lets you play music in your Telegram groups.
+\nI can play music in your group's voice chat
 Maintained by @HEROGAMERS1 ❤
 \nTo add in your group contact us at @LaylaSupport.
 \nUse the buttons below to know more about me.
@@ -36,7 +36,7 @@ Maintained by @HEROGAMERS1 ❤
                 ],
                 [
                     InlineKeyboardButton(
-                        "Join ChatGroup", url="https://t.me/GIRLS_AND_BOYS_CHATTING"
+                        "🌍 Music World", url="https://t.me/GIRLS_AND_BOYS_CHATTING"
                     )
                 ]
             ]
