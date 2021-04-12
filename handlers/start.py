@@ -23,12 +23,15 @@ Maintained by @HEROGAMERS1 ❤
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/VCPlayBot?startgroup=true",
+                        "🌍 Music World", url="https://t.me/GIRLS_AND_BOYS_CHATTING",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Group", url="https://t.me/LaylaSupport"
+                        "💬 Group", url="https://t.me/LaylaSupport"
+                    ),
+                    InlineKeyboardButton(
+                        "🔊 Channel", url="https://t.me/LaylaList"
                     ),
                     InlineKeyboardButton(
                         "💾 Source code", url="https://github.com/QueenArzoo/VCPlayBot"
@@ -36,7 +39,7 @@ Maintained by @HEROGAMERS1 ❤
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌍 Music World", url="https://t.me/GIRLS_AND_BOYS_CHATTING"
+                        "➕ Add To Your Group ➕", url="https://t.me/EmilyVCBot?startgroup=true"
                     )
                 ]
             ]
