@@ -39,7 +39,7 @@ Maintained by @HEROGAMERS1 ❤
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/EmilyVCBot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/VCPlayBot?startgroup=true"
                     )
                 ]
             ]
