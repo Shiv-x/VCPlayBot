@@ -39,8 +39,8 @@ Maintained by @HEROGAMERS1 ❤
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/VCPlayBot?startgroup=true"
-                    )
+                        "➕ Add To Your Group ➕", url="https://t.me/NANGPlayBot?startgroup=true"
+                    ) 
                 ]
             ]
         )
