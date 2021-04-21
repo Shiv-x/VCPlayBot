@@ -58,6 +58,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
+                        "🔊 Channel", url="https://t.me/LaylaList"
+                    )
+                ],[
+                    InlineKeyboardButton(
                         "✅ Yes", switch_inline_query_current_chat=""
                     ),
                     InlineKeyboardButton(
