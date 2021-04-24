@@ -21,18 +21,28 @@ Get STRING_NAME from here:
 
 
 
-## Commands
+## Commands 🛠
 
--The commands and there use is explained here-:
-- `/saavn` To search song on jio saavan and play the first result 
-- `/ut` To search the song on Youtube and play the first matching result.
-- `/deezer` To search song on deezer and play good quality stream.
-- `/play` Reply this in response to a link or any telegram audio file it will be played 
-- `/skip` to skip current song 
-- `/stop` to stop the streaming of song 
-- `/pause` to pause the stream 
-- `/resume` to resume the playback. 
-- Inline search is also supported.
+- `/play <song name>` - play song you requested
+- `/dplay <song name>` - play song you requested via deezer
+- `/splay <song name>` - play song you requested via jio saavn
+- `/playlist` - Show now playing list
+- `/current` - Show now playing
+- `/song <song name>` - download songs you want quickly
+- `/search <query>` - search videos on youtube with details
+- `/deezer <song name>` - download songs you want quickly via deezer
+- `/saavn <song name>` - download songs you want quickly via saavn
+- `/video <song name>` - download videos you want quickly
+
+#### Admins only.
+- `/player` - open music player settings panel
+- `/pause` - pause song play
+- `/resume` - resume song play
+- `/skip` - play next song
+- `/end` - stop music play
+- `/userbotjoin` - invite assistant to your chat
+- `/userbotleave` - remove assistant from your chat
+- `/admincache` - Refresh admin list
 
 ## Requirements
 
