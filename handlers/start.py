@@ -23,23 +23,23 @@ Maintained by @HEROGAMERS1 ❤
             [
                 [
                     InlineKeyboardButton(
-                        "🌍 Music World", url="https://t.me/GIRLS_AND_BOYS_CHATTING",
+                        "owner", url="https://t.me/RI024",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/LaylaSupport"
+                        "grup", url="https://t.me/antigabutbrothers"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "grup", url="https://t.me/SanssAbisssss"
                     ),
                     InlineKeyboardButton(
-                        "💾 Source code", url="https://github.com/QueenArzoo/VCPlayBot"
+                        "support", url="https://t.me/Ngapangentott"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/VCPlayBotBot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/santuabissss_bot?startgroup=true"
                     ) 
                 ]
             ]
@@ -58,7 +58,7 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "Channel", url="https://t.me/sadnesstalk"
                     )
                 ],    
                 [    
@@ -104,7 +104,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "Channel", url="https://t.me/sadnesstalk"
                     )
                 ]
             ]
