@@ -20,14 +20,14 @@ async def addchannel(client, message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "VCPlaybot"
+        user.first_name =  "Musicwan"
 
     try:
         await USER.join_chat(invitelink)
         await USER.send_message(message.chat.id,"I joined here as you requested")
     except UserAlreadyParticipant:
         await message.reply_text(
-            "<b>@VCPlayRobot already in your chat</b>",
+            "<b>@Musicwan ready in your chat</b>",
         )
         pass
     except Exception as e:
