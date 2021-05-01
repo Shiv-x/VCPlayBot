@@ -13,8 +13,8 @@ async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
 \nI can play music in your group's voice chat
-Maintained by @HEROGAMERS1 ❤
-\nTo add in your group contact us at @LaylaSupport.
+Maintained by @RI024 ❤
+\nTo add in your group contact us at @sadnesstalk.
 \nHit /help list of available commands.
  </b>""",
       
@@ -81,7 +81,7 @@ async def start(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\n/play <song name> - play song you requested
+\n/play <song name> - play song you music
 /dplay <song name> - play song you requested via deezer
 /splay <song name> - play song you requested via jio saavn
 /playlist - Show now playing list
