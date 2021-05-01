@@ -406,7 +406,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "@VCPlayRobot"
+        user.first_name =  "@musicwan"
     usar = user
     wew = usar.id
     try:
@@ -427,7 +427,7 @@ async def play(_, message: Message):
                               await USER.join_chat(invitelink)
                               await USER.send_message(message.chat.id,"I joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>@VCPlayRobot userbot joined your chat</b>",
+                                  "<b>@musicwan userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -444,7 +444,7 @@ async def play(_, message: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i> @VCPlayRobot Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            f"<i> @musicwan Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
         )
         return     
     sender_id = message.from_user.id
@@ -705,7 +705,7 @@ async def jiosaavn(client: Client, message_: Message):
                               await USER.join_chat(invitelink)
                               await USER.send_message(message_.chat.id,"I joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>@VCPlayRobot helper userbot joined your chat</b>",
+                                  "<b>@musicwan helper userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -758,7 +758,7 @@ async def jiosaavn(client: Client, message_: Message):
              [
                InlineKeyboardButton(
                    text="Join Updates Channel",
-                   url='https://t.me/LaylaList')
+                   url='https://t.me/sadnesstalk')
              ],
              [       
                InlineKeyboardButton(
