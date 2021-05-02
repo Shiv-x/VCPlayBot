@@ -51,7 +51,7 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Found Nothing.\n\nTry another keywork or maybe spell it properly."
+            "❌ Found Nothing.\n\nKata kunci music yang anda masukan salah silahkan coba lagi."
         )
         print(str(e))
         return
@@ -382,7 +382,7 @@ async def ytmusic(client,message: Message):
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
     capy = f"**Video Name ➠** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
-    await client.send_video(message.chat.id, video = open(file_stark, "rb"), duration = int(ytdl_data["duration"]), file_name = str(ytdl_data["title"]), thumb = sedlyf, caption = capy, supports_streaming = True , progress=progress, progress_args=(pablo, c_time, f''Lagu {urlissed} Lagu via YouTube Music!`', file_stark))
+    await client.send_video(message.chat.id, video = open(file_stark, "rb"), duration = int(ytdl_data["duration"]), file_name = str(ytdl_data["title"]), thumb = sedlyf, caption = capy, supports_streaming = True , progress=progress, progress_args=(pablo, c_time, f''.Lagu {urlissed} lagu via musicwan!`', file_stark))
     await pablo.delete()
     is_downloading = False
     for files in (sedlyf, file_stark):
