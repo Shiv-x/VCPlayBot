@@ -53,7 +53,7 @@ Jika ada ditanyakan hubungi @RI024 ❤
 )
 async def start(client: Client, message: Message):
     await message.reply_text(
-        "apakah kamu ingin memutar via YouTube coba gunakan url 🥰 
+        "apakah kamu ingin memutar via YouTube coba gunakan url Terimakasih🥰?",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
