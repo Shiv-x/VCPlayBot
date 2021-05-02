@@ -32,7 +32,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding the song...')
+    m = message.reply('🔎 Sedang Mencari...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -253,10 +253,11 @@ def time_to_seconds(time):
 async def jssong(_, message):
     global is_downloading
     if len(message.command) < 2:
-        await message.reply_text("/saavn requires an argument.")
+        await message.reply_text("/saavn mencari judul lagu nama.")
         return
     if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
+        await message.reply_text("Tunggu Download Sedang Dalam Antrian Proses, Tunggu mulai dalam beberapa menit.")
+beberapa menit.")
         return
     is_downloading = True
     text = message.text.split(None, 1)[1]
@@ -289,10 +290,10 @@ async def jssong(_, message):
 async def deezsong(_, message):
     global is_downloading
     if len(message.command) < 2:
-        await message.reply_text("/deezer requires an argument.")
+        await message.reply_text("/deezer mencari lagu judul nama.")
         return
     if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
+        await message.reply_text("Tunggu Download Sedang Dalam Antrian Proses, Tunggu beberapa menit lagi.")
         return
     is_downloading = True
     text = message.text.split(None, 1)[1]
@@ -321,16 +322,16 @@ async def deezsong(_, message):
 async def ytmusic(client,message: Message):
     global is_downloading
     if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
+        await message.reply_text("Tunggu Download Sedang Dalam Antrian Proses, Tunggu beberapa menit lagi.")
         return
 
     urlissed = get_text(message)
 
     pablo =  await client.send_message(
             message.chat.id,
-            f"`Getting {urlissed} From Youtube Servers. Please Wait.`")
+            f"`Getting {urlissed} Pencarian Youtube via server. Tunggu sebentar.`")
     if not urlissed:
-        await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
+        await pablo.edit("Tidak valid sytntax digunakan, Coba gunakan perintah /help tata cara penggunaan!")
         return
     
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
@@ -366,7 +367,7 @@ async def ytmusic(client,message: Message):
 
             if duration > 8:
                 await pablo.edit(
-                    f"❌ Videos longer than 8 minute(s) aren't allowed, the provided video is {duration} minute(s)"
+                    f"❌ Videos tidak bisa lebih dari 8 menit(s) Cari , the provided video is {duration} minute(s)"
                 )
                 is_downloading = False
                 return
@@ -387,3 +388,4 @@ async def ytmusic(client,message: Message):
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
+ga
