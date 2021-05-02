@@ -12,10 +12,10 @@ async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\nI can play music in your group's voice chat
-Maintained by @RI024 ❤
-\nTo add in your group contact us at @sadnesstalk.
-\nHit /help list of available commands.
+\nBot ini Bisa Digunakan Di Grup Anda ✅
+Jika ada ditanyakan hubungi @RI024 ❤
+\nJoin Channel Team support @sadnesstalk.
+\nHai /help daftar perintah pengguna Music .
  </b>""",
       
        
@@ -53,7 +53,7 @@ Maintained by @RI024 ❤
 )
 async def start(client: Client, message: Message):
     await message.reply_text(
-        "💁🏻‍♂️ Do you want to search for a YouTube video?",
+        "apakah kamu ingin memutar via YouTube coba gunakan url 🥰 
         reply_markup=InlineKeyboardMarkup(
             [
                 [
