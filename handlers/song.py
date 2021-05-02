@@ -367,7 +367,7 @@ async def ytmusic(client,message: Message):
 
             if duration > 8:
                 await pablo.edit(
-                    f"❌ Videos tidak bisa lebih dari 8 menit(s) Cari , the provided video is {duration} minute(s)"
+                    f"❌ Videos tidak bisa lebih dari 8 menit(s) Cari , dengan judul lagu via YouTube ndengan jelas {duration} minute(s)"
                 )
                 is_downloading = False
                 return
@@ -388,4 +388,4 @@ async def ytmusic(client,message: Message):
     for files in (sedlyf, file_stark):
         if files and os.path.exists(files):
             os.remove(files)
-ga
+
