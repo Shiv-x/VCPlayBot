@@ -12,10 +12,10 @@ async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\nI can play music in your group's voice chat
-Maintained by @HEROGAMERS1 ❤
-\nTo add in your group contact us at @LaylaSupport.
-\nHit /help list of available commands.
+\nBot ini Bisa Digunakan Di Grup Anda ✅
+Jika ada ditanyakan hubungi @RI024 ❤
+\nJoin Channel Team support @sadnesstalk.
+\nHai /help daftar perintah pengguna Music .
  </b>""",
       
        
@@ -23,23 +23,23 @@ Maintained by @HEROGAMERS1 ❤
             [
                 [
                     InlineKeyboardButton(
-                        "🌍 Music World", url="https://t.me/GIRLS_AND_BOYS_CHATTING",
+                        "owner", url="https://t.me/RI024",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/LaylaSupport"
+                        "grup", url="https://t.me/antigabutbrothers"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "grup", url="https://t.me/SanssAbisssss"
                     ),
                     InlineKeyboardButton(
-                        "💾 Source code", url="https://github.com/QueenArzoo/VCPlayBot"
+                        "support", url="https://t.me/Ngapangentott"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/VCPlayBotBot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/santuabissss_bot?startgroup=true"
                     ) 
                 ]
             ]
@@ -53,12 +53,12 @@ Maintained by @HEROGAMERS1 ❤
 )
 async def start(client: Client, message: Message):
     await message.reply_text(
-        "💁🏻‍♂️ Do you want to search for a YouTube video?",
+        "apakah kamu ingin memutar via YouTube coba gunakan url Terimakasih🥰?",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "Channel", url="https://t.me/sadnesstalk"
                     )
                 ],    
                 [    
@@ -81,30 +81,30 @@ async def start(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\n/play <song name> - play song you requested
-/dplay <song name> - play song you requested via deezer
-/splay <song name> - play song you requested via jio saavn
-/playlist - Show now playing list
-/current - Show now playing
-/song <song name> - download songs you want quickly
-/search <query> - search videos on youtube with details
-/deezer <song name> - download songs you want quickly via deezer
-/saavn <song name> - download songs you want quickly via saavn
-/video <song name> - download videos you want quickly
+\n/play <song name> - play lagu dipilih via link youtube
+/dplay <song name> - play lagu dipilih via deezer 
+/splay <song name> - play lagu  dipilih via jio saavn 
+/playlist - Melihat daftar lagu yang tersedia
+/current - Tidak ada daftar putar 
+/song <song name> - download music via song nama artis judul nama artis
+/search <query> - search video via YouTube dengan nama judul artis
+/deezer <song name> - download lagu ketik judul nama artis via deezer
+/saavn <song name> - download lagu via saavn
+/video <song name> - download video dengan nama judul via YouTube
 \n*Admins only*
-/player - open music player settings panel
-/pause - pause song play
-/resume - resume song play
-/skip - play next song
-/end - stop music play
-/userbotjoin - invite assistant to your chat
-/admincache - Refresh admin list
+/player - open music panel bot music 
+/pause - pause berhenti sementara play
+/resume - resume berhenti sementara play
+/skip - play melompat ke lagu lain
+/end - stop berhenti memainkan
+/userbotjoin - manggil music Assistant
+itulah daftar perintah yang tersedia terimakasih 🙏
  </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "Channel", url="https://t.me/sadnesstalk"
                     )
                 ]
             ]
