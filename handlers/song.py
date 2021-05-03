@@ -256,7 +256,7 @@ async def jssong(_, message):
         await message.reply_text("/saavn mencari judul lagu nama.")
         return
     if is_downloading:
-        await message.reply_text("Tunggu Download Sedang Dalam Antrian Proses, Tunggu mulai dalam beberapa menit.")
+        await message.reply_text("Tunggu Download Sedang Dalam Antrian Proses,Coba lagi nanti.")
 beberapa menit.")
         return
     is_downloading = True
@@ -293,8 +293,8 @@ async def deezsong(_, message):
         await message.reply_text("/deezer mencari lagu judul nama.")
         return
     if is_downloading:
-        await message.reply_text("Tunggu Download Sedang Dalam Antrian Proses, Tunggu beberapa menit lagi.")
-        return
+        await message.reply_text("Tunggu Download Sedang Dalam Antrian Proses,Coba lagi nanti.")
+  
     is_downloading = True
     text = message.text.split(None, 1)[1]
     query = text.replace(" ", "%20")
@@ -322,7 +322,7 @@ async def deezsong(_, message):
 async def ytmusic(client,message: Message):
     global is_downloading
     if is_downloading:
-        await message.reply_text("Tunggu Download Sedang Dalam Antrian Proses, Tunggu beberapa menit lagi.")
+        await message.reply_text("Tunggu Download Sedang Dalam Antrian Proses,Coba lagi nanti.")
         return
 
     urlissed = get_text(message)
