@@ -32,7 +32,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding the song...')
+    m = message.reply('🔎 Menemukan lagunya...')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -51,17 +51,17 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Found Nothing.\n\nTry another keywork or maybe spell it properly."
+            "❌ Tidak ada yang ditemukan.\n\nMencoba kunci lain atau mungkin mengejanya dengan benar."
         )
         print(str(e))
         return
-    m.edit("Downloading the song ")
+    m.edit(" Mendownload lagunya ")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**🎵 Uploaded by @VCPlayBot **'
+        rep = '**🎵 Uploaded by @iwanmusic **'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
@@ -330,7 +330,7 @@ async def ytmusic(client,message: Message):
             message.chat.id,
             f"`Getting {urlissed} From Youtube Servers. Please Wait.`")
     if not urlissed:
-        await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
+        await pablo.edit("Sintaks Perintah Tidak Valid, Silakan Periksa Menu Bantuan Untuk Mengetahui Lebih Lanjut!")
         return
     
     search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
@@ -366,7 +366,7 @@ async def ytmusic(client,message: Message):
 
             if duration > 8:
                 await pablo.edit(
-                    f"❌ Videos longer than 8 minute(s) aren't allowed, the provided video is {duration} minute(s)"
+                    f"❌ Video berdurasi lebih dari 8 menit tidak diperbolehkan,video yang disediakan diperbolehkan {duration} minute(s)"
                 )
                 is_downloading = False
                 return
