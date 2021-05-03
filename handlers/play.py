@@ -174,7 +174,7 @@ def r_ply(type_):
     mar = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton('⏹', 'leave'),
+                InlineKeyboardButton('⏹', 'stop'),
                 InlineKeyboardButton('⏸', 'puse'),
                 InlineKeyboardButton('▶️', 'resume'),
                 InlineKeyboardButton('⏭', 'skip')
@@ -347,7 +347,7 @@ async def m_cb(b, cb):
         marr = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⏹', 'leave'),
+                    InlineKeyboardButton('⏹', 'stop'),
                     InlineKeyboardButton('⏸', 'puse'),
                     InlineKeyboardButton('▶️', 'resume'),
                     InlineKeyboardButton('⏭', 'skip')
@@ -490,8 +490,8 @@ async def play(_, message: Message):
                 ],                     
                 [
                     InlineKeyboardButton(
-                        text="Watch On YouTube 🎬",
-                        url=f"{url}")
+                        text="JOIN GC ",
+                        url='https://t.me/SAVIR01')
 
                 ],
                 [       
@@ -757,8 +757,8 @@ async def jiosaavn(client: Client, message_: Message):
              ],                     
              [
                InlineKeyboardButton(
-                   text="Join Updates Channel",
-                   url='https://t.me/LaylaList')
+                   text="Join GROUP",
+                   url='https://t.me/SAVIR01')
              ],
              [       
                InlineKeyboardButton(
