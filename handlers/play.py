@@ -592,7 +592,7 @@ async def deezer(client: Client, message_: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>Sepertinya @musicwan Userbot tidak ada dalam obrolan ini, Ask admin to send /play command for first time or adAsk admin to send /play command for first time or add assistant manually</i>"
+            f"<i>Sepertinya @musicwan Userbot tidak ada dalam obrolan ini, </Minta admin untuk mengirim / memainkan perintah untuk pertama kali atau adMinta admin untuk mengirim /play /help perintah untuk pertama kalinya atau tambahkan asisten secara manual <i>"
 
         )
         return                            
