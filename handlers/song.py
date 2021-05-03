@@ -256,7 +256,7 @@ async def jssong(_, message):
         await message.reply_text("/saavn requires an argument.")
         return
     if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
+        await message.reply_text("Unduhan lain sedang berlangsung, coba lagi nanti.")
         return
     is_downloading = True
     text = message.text.split(None, 1)[1]
@@ -292,15 +292,15 @@ async def deezsong(_, message):
         await message.reply_text("/deezer requires an argument.")
         return
     if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
+        await message.reply_text("Unduhan lain sedang berlangsung, coba lagi nanti.")
         return
     is_downloading = True
     text = message.text.split(None, 1)[1]
     query = text.replace(" ", "%20")
-    m = await message.reply_text("Searching...")
+    m = await message.reply_text("Mencari...")
     try:
         songs = await arq.deezer(query, 1)
-        title = songs[0].title
+        title = songs[0].titleMencari
         url = songs[0].url
         artist = songs[0].artist
         await m.edit("Downloading")
@@ -321,14 +321,14 @@ async def deezsong(_, message):
 async def ytmusic(client,message: Message):
     global is_downloading
     if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
+        await message.reply_text("Unduhan lain sedang berlangsung, coba lagi nanti.")
         return
 
     urlissed = get_text(message)
 
     pablo =  await client.send_message(
             message.chat.id,
-            f"`Getting {urlissed} From Youtube Servers. Please Wait.`")
+            f"`Mendapatkan {urlissed} Dari Server Youtube. Mohon tunggu`")
     if not urlissed:
         await pablo.edit("Sintaks Perintah Tidak Valid, Silakan Periksa Menu Bantuan Untuk Mengetahui Lebih Lanjut!")
         return
@@ -380,7 +380,7 @@ async def ytmusic(client,message: Message):
     
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"**Video Name ➠** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
+    capy = f"**Nama Video ➠**Diminta Untuk `{thum}` \n** :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
     await client.send_video(message.chat.id, video = open(file_stark, "rb"), duration = int(ytdl_data["duration"]), file_name = str(ytdl_data["title"]), thumb = sedlyf, caption = capy, supports_streaming = True , progress=progress, progress_args=(pablo, c_time, f'`membagikan {urlissed} lagu music via YouTube!`',file_stark))
     await pablo.delete()
     is_downloading = False
