@@ -159,9 +159,9 @@ def updated_stats(chat, queue, vol=100):
         if len(que) > 0:
             stats += '\n\n'
             stats += 'Volume : {}%\n'.format(vol)
-            stats += 'Songs in queue : `{}`\n'.format(len(que))
-            stats += 'Now Playing : **{}**\n'.format(queue[0][0])
-            stats += 'Requested by : {}'.format(queue[0][1].mention)
+            stats += 'Lagu dalam Antrian : `{}`\n'.format(len(que))
+            stats += 'Sedang dimainkan : **{}**\n'.format(queue[0][0])
+            stats += 'Permintaan oleh : {}'.format(queue[0][1].mention)
     else:
         stats = None
     return stats
@@ -449,7 +449,7 @@ async def play(_, message: Message):
         return     
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
-    await lel.edit("🔎 **Finding**")
+    await lel.edit("🔎 **Temuan**")
     sender_id = message.from_user.id
     user_id = message.from_user.id
     sender_name = message.from_user.first_name
@@ -460,7 +460,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **Processing**")
+    await lel.edit("🎵 **Pengolahan**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -476,7 +476,7 @@ async def play(_, message: Message):
         views = results[0]["views"]
 
     except Exception as e:
-        await lel.edit("Song not found.Try another song or maybe spell it properly.")
+        await lel.edit("Lagu tidak ditemukan. Coba lagu lain atau mungkin mengejanya dengan benar.")
         print(str(e))
         return
 
@@ -490,7 +490,7 @@ async def play(_, message: Message):
                 ],                     
                 [
                     InlineKeyboardButton(
-                        text="Watch On YouTube 🎬",
+                        text="Tonton Di YouTube 📺",
                         url=f"{url}")
 
                 ],
@@ -533,7 +533,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** here the song requested by {} 😜".format(
+        caption="▶️ **Playing** di sini lagu tersebut diminta oleh {} 😜".format(
         message.from_user.mention()
         ),
     )
@@ -583,8 +583,8 @@ async def deezer(client: Client, message_: Message):
                           except Exception as e:
                               #print(e)
                               await lel.edit(
-                                  f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add @musicwan to your Group and try again</b>",
+                                  f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} tidak dapat bergabung dengan grup Anda karena banyaknya permintaan untuk userbot! Pastikan pengguna tidak dilarang dalam grup."
+                                  "\n\nOr tambahkan @musicwan ke Grup Anda secara manual dan coba lagi</b>",
                               )
                               pass
     try:
@@ -592,7 +592,8 @@ async def deezer(client: Client, message_: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            f"<i>Looks like @musicwan Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            f"<i>Sepertinya @musicwan Userbot tidak ada dalam obrolan ini, Ask admin to send /play command for first time or adAsk admin to send /play command for first time or add assistant manually</i>"
+        )d assistant manually</i>"
         )
         return                            
     requested_by = message_.from_user.first_name   
