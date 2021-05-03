@@ -253,7 +253,7 @@ def time_to_seconds(time):
 async def jssong(_, message):
     global is_downloading
     if len(message.command) < 2:
-        await message.reply_text("/saavn requires an argument.")
+        await message.reply_text("/saavn membutuhkan argumen.")
         return
     if is_downloading:
         await message.reply_text("Unduhan lain sedang berlangsung, coba lagi nanti.")
@@ -261,7 +261,7 @@ async def jssong(_, message):
     is_downloading = True
     text = message.text.split(None, 1)[1]
     query = text.replace(" ", "%20")
-    m = await message.reply_text("Searching...")
+    m = await message.reply_text("Mencari...")
     try:
         songs = await arq.saavn(query)
         sname = songs[0].song
@@ -289,7 +289,7 @@ async def jssong(_, message):
 async def deezsong(_, message):
     global is_downloading
     if len(message.command) < 2:
-        await message.reply_text("/deezer requires an argument.")
+        await message.reply_text("/deezer membutuhkan argumen.")
         return
     if is_downloading:
         await message.reply_text("Unduhan lain sedang berlangsung, coba lagi nanti.")
@@ -374,7 +374,7 @@ async def ytmusic(client,message: Message):
             
     
     except Exception as e:
-        #await pablo.edit(event, f"**Failed To Download** \n**Error :** `{str(e)}`")
+        #await pablo.edit(event, f"**Gagal Mengunduh** \n**Kesalahan :** `{str(e)}`")
         is_downloading = False
         return
     
