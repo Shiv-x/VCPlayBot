@@ -106,4 +106,4 @@ async def skip(_, message: Message):
 @errors
 async def admincache(client, message: Message):
     set(message.chat.id, [member.user for member in await message.chat.get_members(filter="administrators")])
-    #await message.reply_text(*musicwan*=🌟"Admin cache refreshed!")
+    #await message.reply_text("Admin cache refreshed!")
