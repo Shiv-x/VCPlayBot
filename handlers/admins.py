@@ -13,6 +13,10 @@ from config import BOT_NAME as BN
 from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
 from config import que, admins as a
+@app.on_message(main_filter & filters.regex("^/ping$"))
+async def ping_pong(_, message):
+    await _reply_and_delete_later(message, "pong",
+                                  DELAY_DELETE_INFORM)
 
 @Client.on_message(filters.command('adminreset'))
 async def update_admin(client, message):
