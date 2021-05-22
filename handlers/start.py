@@ -14,7 +14,7 @@ async def start_(client: Client, message: Message):
         f"""<b>Hi {message.from_user.first_name}!
 \nI can play music in your group's voice chat
 Maintained by @HEROGAMERS1 ❤
-\nTo add in your group contact us at @LaylaSupport.
+\nTo add in your group contact us at @AwesomeSupport.
 \nHit /help list of available commands.
  </b>""",
       
@@ -28,7 +28,7 @@ Maintained by @HEROGAMERS1 ❤
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/LaylaSupport"
+                        "💬 Group", url="https://t.me/AwesomeSupport"
                     ),
                     InlineKeyboardButton(
                         "🔊 Channel", url="https://t.me/LaylaList"
@@ -59,6 +59,9 @@ async def start(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "🔊 Channel", url="https://t.me/LaylaList"
+                    ),
+                    InlineKeyboardButton(
+                        "💬 Group", url="https://t.me/AwesomeSupport"
                     )
                 ],    
                 [    
@@ -105,6 +108,9 @@ async def help(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "🔊 Channel", url="https://t.me/LaylaList"
+                    ),
+                    InlineKeyboardButton(
+                        "💬 Group", url="https://t.me/AwesomeSupport"
                     )
                 ]
             ]
