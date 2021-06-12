@@ -12,10 +12,10 @@ async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\nI can play music in your group's voice chat
-Maintained by @HEROGAMERS1 ❤
-\nTo add in your group contact us at @AwesomeSupport.
-\nHit /help list of available commands.
+\nI Grubunuzun sesli sohbetinde müzik çalabilirim
+Benim Tarafımdan korunur @yoksunhala ❤️🥵
+\nTo adresinden bize ulaşın. @CanmuzikSupport.
+\nHit Kullanılabilir komutların /help listesine basın...
  </b>""",
       
        
@@ -23,23 +23,23 @@ Maintained by @HEROGAMERS1 ❤
             [
                 [
                     InlineKeyboardButton(
-                        "🌍 Music World", url="https://t.me/GIRLS_AND_BOYS_CHATTING",
+                        "🌍 Müzik Dünyası" , url    =    "https://t.me/joinchat/31ibrhlU0SQ1ZjI0" ,
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/AwesomeSupport"
+                        "💬 Grup", url="https://t.me/joinchat/31ibrhlU0SQ1ZjI0"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🔊 Channel", url="https://t.me/joinchat/31ibrhlU0SQ1ZjI0"
                     ),
                     InlineKeyboardButton(
-                        "💾 Source code", url="https://github.com/QueenArzoo/VCPlayBot"
+                        "💾 kaynak kodu", url="https://github.com/Can131w"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/VCPlayBot?startgroup=true"
+                        "➕ Grubunuza Ekleyin ➕" , url    = "https://t.me/Lgmuzik_bot?startgroup=true"
                     ) 
                 ]
             ]
@@ -51,17 +51,68 @@ Maintained by @HEROGAMERS1 ❤
     & filters.group
     & ~ filters.edited
 )
-async def start(client: Client, message: Message):
+async def start(client: from pyrogram import Client, filters
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+
+
+
+@Client.on_message(
+    filters.command("start")
+    & filters.private
+    & ~ filters.edited
+)
+async def start_(client: Client, message: Message):
+    await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
     await message.reply_text(
-        "💁🏻‍♂️ Do you want to search for a YouTube video?",
+        f"""<b>Hi {message.from_user.first_name}!
+\nI Grubunuzun sesli sohbetinde müzik çalabilirim
+Benim Tarafımdan korunur @yoksunhala ❤️🥵
+\nTo adresinden bize ulaşın. @CanmuzikSupport.
+\nHit Kullanılabilir komutların /help listesine basın...
+ </b>""",
+      
+       
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🌍 Müzik Dünyası" , url    =    "https://t.me/joinchat/31ibrhlU0SQ1ZjI0" ,
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "💬 Grup", url="https://t.me/joinchat/31ibrhlU0SQ1ZjI0"
                     ),
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/AwesomeSupport"
+                        "🔊 Channel", url="https://t.me/joinchat/31ibrhlU0SQ1ZjI0"
+                    ),
+                    InlineKeyboardButton(
+                        "💾 kaynak kodu", url="https://github.com/Can131w"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "➕ Grubunuza Ekleyin ➕" , url    = "https://t.me/Lgmuzik_bot?startgroup=true"
+                    ) 
+                ]
+            ]
+        )
+    )
+
+@Client.on_message(
+    filters.command("start")
+    & filters.group
+    & ~ filters.editedClient, message: Message):
+    await message.reply_text(
+        "💁🏻‍♂️ bir Youtube videosu aramak istermisiniz
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🔊 Kanal" , url = "https://t.me/CanmuzikSupport"
+                    ),
+                    InlineKeyboardButton(
+                        "💬 Group", url="https://t.me/joinchat/31ibrhlU0SQ1ZjI0"
                     )
                 ],    
                 [    
@@ -84,33 +135,60 @@ async def start(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hi {message.from_user.first_name}!
-\n/play <song name> - play song you requested
-/dplay <song name> - play song you requested via deezer
-/splay <song name> - play song you requested via jio saavn
-/playlist - Show now playing list
-/current - Show now playing
-/song <song name> - download songs you want quickly
-/search <query> - search videos on youtube with details
-/deezer <song name> - download songs you want quickly via deezer
-/saavn <song name> - download songs you want quickly via saavn
-/video <song name> - download videos you want quickly
-\n*Admins only*
-/player - open music player settings panel
-/pause - pause song play
-/resume - resume song play
-/skip - play next song
-/end - stop music play
-/userbotjoin - invite assistant to your chat
-/admincache - Refresh admin list
- </b>""",
+/n/play <şarkı adı> - istediğiniz şarkıyı çal
+
+ /dplay <şarkı adı> - deezer aracılığıyla istediğiniz şarkıyı çal
+
+ /splay <şarkı adı> - jio saavn aracılığıyla istediğiniz şarkıyı çal
+
+ /playlist - Şimdi oynatma listesini göster
+
+ /current - Şimdi oynatılıyor göster
+
+ /song <şarkı adı> - istediğiniz şarkıları hızlıca indirin
+
+ /search <query> - youtube'da ayrıntılarla video arayın
+
+ /deezer <şarkı adı> - deezer aracılığıyla istediğiniz şarkıları hızlı bir şekilde indirin
+
+ /saavn <şarkı adı> - saavn aracılığıyla istediğiniz şarkıları hızlı bir şekilde indirin
+
+ /video <şarkı adı> - istediğiniz videoları hızlıca indirin
+
+ \n*Yalnızca yöneticiler*
+
+ /player - müzik çalar ayarları panelini aç
+
+ /pause - şarkı çalmayı duraklat
+
+ /resume - şarkı çalmaya devam et
+
+ /atla - sonraki şarkıyı çal
+
+ /end - müzik çalmayı durdur
+
+ /userbotjoin - asistanı sohbetinize davet edin
+
+ /admincache - Yönetici listesini yenile
+</b>""",
+
+
+
+
+
+
+
+
+
+
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🔊 Kanal", url="https://t.me/CanmuzikSupport"
                     ),
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/AwesomeSupport"
+                        "💬 Grup", url="https://t.me/joinchat/31ibrhlU0SQ1ZjI0"
                     )
                 ]
             ]
