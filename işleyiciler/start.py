@@ -11,11 +11,10 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
     await message.reply_text(
-        f"""<b>Hi {message.from_user.first_name}!
-\nI can play music in your group's voice chat
-Maintained by @HEROGAMERS1 ❤
-\nTo add in your group contact us at @AwesomeSupport.
-\nHit /help list of available commands.
+        f"""<b>Merhaba {message.from_user.first_name}!
+\nGrubunun sesli sohbetinde müzik çalabilirim @naberbebeq tarafından korunur ❤
+\nSohbet ve Destek için @hzelpatrons.
+\nKomutları görmek için /help yazman yeterli.
  </b>""",
       
        
@@ -23,23 +22,23 @@ Maintained by @HEROGAMERS1 ❤
             [
                 [
                     InlineKeyboardButton(
-                        "🌍 Music World", url="https://t.me/GIRLS_AND_BOYS_CHATTING",
+                        "🌍 Müzik Dünyası", url="https://t.me/harleymusiic",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/AwesomeSupport"
+                        "💬 Grup", url="https://t.me/hzelpatrons"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🔊 Kanal", url="https://t.me/harleymusiic"
                     ),
                     InlineKeyboardButton(
-                        "💾 Source code", url="https://github.com/QueenArzoo/VCPlayBot"
+                        "💾 Kaynak Kodu", url="https://github.com/QueenArzoo/VCPlayBot"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/VCPlayBot?startgroup=true"
+                        "➕ Beni Gruba Ekle ➕", url="https://t.me/VCPlayBot?startgroup=true"
                     ) 
                 ]
             ]
@@ -58,10 +57,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🔊 Kanal", url="https://t.me/harleymusiic"
                     ),
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/AwesomeSupport"
+                        "💬 Grup", url="https://t.me/hzelpatrons"
                     )
                 ],    
                 [    
@@ -83,7 +82,7 @@ async def start(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>Hi {message.from_user.first_name}!
+        f"""<b>Merhaba {message.from_user.first_name}!
 \n/play <song name> - play song you requested
 /dplay <song name> - play song you requested via deezer
 /splay <song name> - play song you requested via jio saavn
@@ -107,10 +106,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🔊 Kanal", url="https://t.me/harleymusiic"
                     ),
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/AwesomeSupport"
+                        "💬 Grup", url="https://t.me/hzelpatrons"
                     )
                 ]
             ]
