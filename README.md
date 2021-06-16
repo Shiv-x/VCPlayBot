@@ -44,41 +44,39 @@ Get STRING_NAME from here:
 - `/userbotleave` - remove assistant from your chat
 - `/admincache` - Refresh admin list
 
-## Requirements
+### Commands for Channel Music Play 🛠
+For linked group admins only:
+- `/cplay <song name>` - play song you requested
+- `/cplay <reply to link>` - play replied youtube link
+- `/cplay <reply to audio>` - play replied file
+- `/cdplay <song name>` - play song you requested via deezer
+- `/csplay <song name>` - play song you requested via jio saavn
+- `/cplaylist` - Show now playing list
+- `/cccurrent` - Show now playing
+- `/cplayer` - open music player settings panel
+- `/cpause` - pause song play
+- `/cresume` - resume song play
+- `/cskip` - play next song
+- `/cend` - stop music play
+- `/userbotjoinchannel` - invite assistant to your chat
+* channel is also can be used instead of c
 
-- FFmpeg
-- Python 3.7+
+If you donlt like to play in linked channel:
+ 1. Get your channel ID.
+ 2. Rename your group to: Channel Music: your_channel_id
+ 3. Add @VCPlayBot as Channel admin with full perms
+ 4. add helper to channel
+ 5. Simply send commands in your group.
 
-## Deployment
+### Commands for Sudo Users ⚔️
+- `/userbotleaveall` - remove assistant from all chats
+- `/gcast <reply to message>` - globally brodcast replied message to all chats
+- `/pmpermit [on/off]` - enable/disable pmpermit message
 
-### Config
+#### Pmpermit
+- `.a` - approove someone to pm you
+- `.da` - disapproove someone to pm you
++ Sudo Users can execute any command in any groups
 
-Copy `example.env` to `.env` and fill it with your credentials.
-
-### The good way
-
-1. Install Python requirements:
-   ```bash
-   pip install -U -r requirements.txt
-   ```
-2. Run:
-   ```bash
-   python main.py
-   ```
-
-### Docker
-
-1. Build:
-   ```bash
-   docker build -t musicplayer .
-   ```
-2. Run:
-   ```bash
-   docker run --env-file .env musicplayer
-   ```
-
-## License
-
-### GNU Affero General Public License v3.0
-
-[Read more](http://www.gnu.org/licenses/#AGPL)
+#### Special Credits
+- [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
