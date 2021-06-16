@@ -7,23 +7,23 @@ if os.path.exists("local.env"):
     load_dotenv("local.env")
 
 que = {}
-SESSION_NAME = "AQCFmz_g0IQsKrZPUWaUPZBck9D1M1e_7vgR4vGVzOyLoHyRztfRH5im86RyLmi6-DonEiaLTr2LuWMXWvouy2MwMleeq_hZq-bDcyyOaQcsDuLesXWKN4C1XzXYKOzhg2n7PaHZH28HQdaF5D59eq0r_NqLCZDd31NoKddeZ1fHbClIltclq-OqADtWCyyPHRmeM0ZDf88wgSLEW0ycg62Dic6hrPuFgPlGANJfvN4yP3BgA5pgHgkl3NJMxx6Ul-bjppUanFe6nyP5IBrFViWeRc8Jx9R36d_YzRb3HdWdBBXiVCW-QRaisnTNMGouECXLUbmRN1kS5P4bG8Z0ZluIWDYCzAA"
-BOT_TOKEN = "1708176917:AAE0ltb1C799txeSm3etJcc4VQzC6QXWwnY"
-BOT_NAME = "@VCPlayBot"
-UPDATES_CHANNEL = "LaylaList"
-BG_IMAGE = "https://telegra.ph/file/9b13ea3ce046a1a5c8098.png"
+SESSION_NAME = getenv("SESSION_NAME", "session")
+BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_NAME = getenv("BOT_NAME")
+UPDATES_CHANNEL = getenv("UPDATES_CHANNEL", "DaisyXupdates")
+BG_IMAGE = getenv("BG_IMAGE", "https://telegra.ph/file/dcfdf612e499eef0e0b1f.png")
 admins = {}
-API_ID = int("2095740")
-API_HASH = "e93c864e9f2913e4efe0dd52488e4c2d"
-BOT_USERNAME = "NANGPlayBot"
-ASSISTANT_NAME = "NangPlayAssistant"
-SUPPORT_GROUP = "Awesomesupport"
-PROJECT_NAME = "VCPlayBot2.0"
-SOURCE_CODE = "github.com/QueenArzoo/VCPlayBot"
-DURATION_LIMIT = int("15")
-ARQ_API_KEY = None
-PMPERMIT = "ENABLE"
-LOG_GRP = None
-COMMAND_PREFIXES = list("/")
+API_ID = int(getenv("API_ID"))
+API_HASH = getenv("API_HASH")
+BOT_USERNAME = getenv("BOT_USERNAME")
+ASSISTANT_NAME = getenv("ASSISTANT_NAME", "DaisyXhelper")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "DaisySupport_Official")
+PROJECT_NAME = getenv("PROJECT_NAME", "DaisyXMusic v4")
+SOURCE_CODE = getenv("SOURCE_CODE", "github.com/teamdaisyx/daisyxmusic")
+DURATION_LIMIT = int(getenv("DURATION_LIMIT", "7"))
+ARQ_API_KEY = getenv("ARQ_API_KEY", None)
+PMPERMIT = getenv("PMPERMIT", None)
+LOG_GRP = getenv("LOG_GRP", None)
+COMMAND_PREFIXES = list(getenv("COMMAND_PREFIXES", "/ !").split())
 
-SUDO_USERS = list("797768146")
+SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
