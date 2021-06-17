@@ -1,0 +1,11 @@
+---
+application:
+  name: "vcplaybot"
+  project: "VCPlayBot"
+  organization: "QoveryCommunity"
+routers:
+- name: "main-vcplaybot"
+  routes:
+  - application_name: "vcplaybot"
+    paths:
+    - "/*"
