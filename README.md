@@ -80,3 +80,6 @@ If you donlt like to play in linked channel:
 
 #### Special Credits
 - [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
+
+#### Installation Video
+- [Video](https://www.youtube.com/watch?v=FOJT8T1SCY0): Installation Video
