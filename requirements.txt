@@ -16,3 +16,4 @@ python-arq
 future
 psutil
 wget
+regex
