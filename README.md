@@ -8,6 +8,14 @@ The easiest way to deploy this Bot
 - Support Group :- [Awesome Support](http://t.me/AwesomeSupport)
 
 
+```
+Please fork this repository don't import code
+Made with Python3
+(C) @QueenArzoo
+
+```
+
+
 
 ### Mandatory Vars.
 
