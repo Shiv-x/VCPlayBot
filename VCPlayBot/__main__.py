@@ -5,7 +5,7 @@ from VCPlayBot.config import API_HASH, API_ID, BG_IMAGE, BOT_TOKEN
 from VCPlayBot.services.callsmusic import run
 
 response = requests.get(BG_IMAGE)
-file = open("./etc/foreground.png", "wb")
+file = open("https://telegra.ph/file/e18a516fdf4b9dda2708e.jpg", "wb")
 file.write(response.content)
 file.close()
 
