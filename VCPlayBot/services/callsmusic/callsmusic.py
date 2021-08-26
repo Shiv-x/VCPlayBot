@@ -16,4 +16,4 @@ def on_stream_end(chat_id: int) -> None:
         pytgcalls.leave_group_call(chat_id)
     else:
         pytgcalls.change_stream(chat_id, queues.get(chat_id)["file"])
-start = pytgcalls.rum
+run = pytgcalls.run_(chat_id, queues.get(chat_id)["file"])
