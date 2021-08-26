@@ -25,12 +25,12 @@
     },
     "BOT_NAME": {
       "description": "Your MusicPlayer Bot Name.",
-      "required": false,
+      "required": true,
       "value": ""
     },
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
-      "required": false,
+      "required": true,
       "value": "AwesomeSupport"
     },
     "PROJECT_NAME": {
@@ -44,17 +44,17 @@
     },
     "ARQ_API_KEY": {
       "description": "Get from @ARQRobot.",
-      "required": false,
-      "value": "VKSSQH-SRNJYZ-MSOJAI-QALESR-ARQ"
+      "required": true,
+      "value": ""
     },    
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
-      "required": false,
+      "required": true,
       "value": "https://telegra.ph/file/9b13ea3ce046a1a5c8098.png"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
-      "required": false,
+      "required": true,
       "value": "LaylaList"
     },    
     "API_ID": {
@@ -63,7 +63,7 @@
     },
     "PMPERMIT": {
       "description": "Change to turn off",
-      "required": false,
+      "required": true,
       "value": "ENABLE"
     },    
     "API_HASH": {
