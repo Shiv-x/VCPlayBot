@@ -6,7 +6,7 @@ from VCPlayBot.config import BOT_USERNAME, BOT_NAME, ASSISTANT_NAME, OWNER_NAME,
 from VCPlayBot.helpers.filters import command
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, Chat, CallbackQuery
-from helpers.decorators import sudo_users_only
+from VCPlayBot.helpers.decorators import sudo_users_only
 
 logging.basicConfig(level=logging.INFO)
 
