@@ -4,7 +4,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, Chat, CallbackQuery
 from VCPlayBot.helpers.decorators import authorized_users_only
 from VCPlayBot.config import BOT_NAME, BOT_USERNAME, OWNER_NAME, SUPPORT_GROUP, UPDATES_CHANNEL, ASSISTANT_NAME
-from VCPlayBot.handlers.play import cb_admin_check
+from VCPlayBot.modules.play import cb_admin_check
 
 
 @Client.on_callback_query(filters.regex("cbstart"))
