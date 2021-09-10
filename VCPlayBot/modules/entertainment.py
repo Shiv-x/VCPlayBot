@@ -1,7 +1,7 @@
 import requests
 from pyrogram import Client
 from VCPlayBot.config import BOT_USERNAME
-from helpers.filters import command
+from VCPlayBot.helpers.filters import command
 
 @Client.on_message(command(["asupan", f"asupan@{BOT_USERNAME}"]))
 async def asupan(client, message):
