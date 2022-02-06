@@ -1,9 +1,9 @@
 {
   "name": "GyaniMusicBot",
   "logo": "https://telegra.ph/file/453ca2160aed6598489e2.jpg",
-  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by Gyani.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/Emotionalgyani👑/VCPlayBot",
+  "repository": "https://github.com/Emotionalgyani👑/GyaniPlayBot",
   "stack": "container",
   "buildpacks": [
    {
@@ -43,7 +43,7 @@
       "required": true
     },
     "ARQ_API_KEY": {
-      "description": "Get from @ARQRobot.",
+      "description": "Get from @Gyanimanagmentbot.",
       "required": false,
       "value": "VKSSQH-SRNJYZ-MSOJAI-QALESR-ARQ"
     },    
@@ -75,9 +75,9 @@
       "required": true
     },
     "DURATION_LIMIT": {
-      "description": "Max audio duration limit for downloads (hours).",
+      "description": "Max audio duration limit for downloads (minuts).",
       "required": true,
-      "value": "2"
+      "value": "120"
     }
   }
 }
