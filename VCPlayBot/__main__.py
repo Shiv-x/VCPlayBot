@@ -16,7 +16,7 @@ bot = Bot(
     ":memory:",
     API_ID,
     API_HASH,
-    bot_token=BOT_TOKEN,
+    bot_token=BOT_TOKEN,5109382247:AAFqHlzS_bDx0Lfkb00vLd423Qdup52UEcw
     plugins=dict(root="VCPlayBot.modules"),
 )
 
