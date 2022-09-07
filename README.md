@@ -3,7 +3,7 @@ The easiest way to deploy this Bot
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/QueenArzoo/VCPlayBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
 
 
-- Support Channel :- [Awesome Bot](http://t.me/LaylaList)
+- Support Channel :- [Awesome Bot](http://t.me/LaylaBots)
 
 - Support Group :- [Awesome Support](http://t.me/AwesomeSupport)
 
@@ -91,5 +91,5 @@ If you donlt like to play in linked channel:
 
 #### Special Credits
 - [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
-- [Awesome Bot](http://t.me/LaylaList) Channel bot list
-- [Dev](http://t.me/HEROGAMERS1) Hero owner of this bot
+- [Awesome Bot](http://t.me/LaylaBots) Channel bot list
+- [Dev](http://t.me/Dead0XD) Hero owner of this bot
