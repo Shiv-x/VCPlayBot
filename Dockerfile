@@ -1,8 +1,1 @@
-FROM python:3.9.6-slim-buster
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install git curl python3-pip ffmpeg -y
-RUN python3.9 -m pip install -U pip
-COPY . /app
-WORKDIR /app
-RUN python3.9 -m pip install -U -r requirements.txt
-CMD python3.9 -m VCPlayBot
+# Use an existing image as the base FROM python:3.8-alpine # Set the working directory in the image WORKDIR /app # Copy the application files into the image COPY . . # Install dependencies RUN pip install -r requirements.txt # Specify the command to run the application CMD ["python", "vcplaybot.py"]
