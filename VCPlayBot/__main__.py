@@ -14,9 +14,9 @@ file.close()
 
 bot = Bot(
     ":memory:",
-    API_ID,
-    API_HASH,
-    bot_token=BOT_TOKEN,
+    API_ID,14884817
+    API_HASH,f0bc9519bd536c4c7b49c9d32a3ddc17
+    bot_token=BOT_TOKEN,5109382247:AAFqHlzS_bDx0Lfkb00vLd423Qdup52UEcw
     plugins=dict(root="VCPlayBot.modules"),
 )
 
